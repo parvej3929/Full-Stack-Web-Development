@@ -1,0 +1,38 @@
+body {
+  background-color: lightblue;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1 {
+  color: darkblue;
+}
+
+p {
+  color: #333;
+  font-size: 20px;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.card {
+  background: white;
+  width: 200px;
+  height: 300px;
+  margin: 100px auto;  /*margin top and bottom 100px and left and right automatic select  */
+  padding: 20px; /* Space inside the card */
+  border-radius: 12px; 
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
