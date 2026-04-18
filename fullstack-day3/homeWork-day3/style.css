@@ -1,0 +1,19 @@
+button:hover{
+    cursor: pointer;
+}
+
+button{
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: auto 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
