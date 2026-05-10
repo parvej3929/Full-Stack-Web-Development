@@ -35,8 +35,8 @@ function App() {
         ):(
           todo.map((task,index) =>(
             <div style={styles.innerCard} key={index}>
-              <span>{task}</span>
-              <button onClick={() => deleteTask(index)}> Delete</button>
+              <p>{task}</p>
+              <button style={styles.innerButton} onClick={() => deleteTask(index)}> Delete</button>
             </div>
           ))
         )}
@@ -58,13 +58,32 @@ const styles = {
     borderRadius: "10px",
     width: "350px",
     textAlign: "center",
-    padding : "20px"
+    padding : "20px",
+    background: "white"
   },
   button: {
     margin: "5px",
     borderRadius: "5px",
     border: "none",
-    padding : "5px 10px"
+    padding : "5px 10px",
+    background: "green",
+    color: "white",
+    cursor: "pointer"
+  },
+  innerCard: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "5px",
+    alignItems: "center"
+  },
+  innerButton: {
+    margin: "5px",
+    borderRadius: "5px",
+    border: "none",
+    padding : "5px 10px",
+    background: "red",
+    color: "white",
+    cursor: "pointer"
   }
 }
 
