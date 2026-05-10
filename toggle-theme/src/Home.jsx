@@ -1,9 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
-
+import {useContext } from 'react'
+import {themeContext} from './App'
 
 const Home = () => {
-    const [theme, setTheme] = useState("light")
+    const {theme, setTheme} = useContext(themeContext);
+
     const toggleTheme = () =>{
         setTheme(theme==="dark"?"light":"dark")
     }
